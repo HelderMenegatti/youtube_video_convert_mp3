@@ -1,37 +1,35 @@
-# Aplicativo que conter videos do Youtube em mp3
-Esta é um projeto que converte videos do Youtube em mp3, para utizar basta seguir o seguintes passos:
+# Aplicativo para converter vídeos do Youtube em MP3
+Este é um projeto que converte vídeos do Youtube em MP3. Para utilizá-lo, siga estes passos:
 
-## 1. Clone o repositorio.
+## 1. Clone o repositório.
 :~$ git clone https://github.com/HelderMenegatti/youtube_video_convert_mp3.git
 
 ## 2. Ambiente virtual.
-É recomendado a istalação das dependencias em um ambiente virtual, neste exemplo iremos utilizar o virtuaenv, dentro do repositorio que foi clonado crei o ambiente virtual.
+É recomendada a instalação das dependências em um ambiente virtual. Neste exemplo, utilizaremos o virtualenv. Dentro do repositório clonado, crie o ambiente virtual.
 
 :~$ virtuaenv nome_do_ambiete_virtual
 
 ## 3. Acessando o ambiente virtual.
-para acessar o virtualenv basta utilizar o seguinte comando:
+Para acessar o virtualenv, basta utilizar o seguinte comando:
 
 :~$ source nome_do_ambiete_virtual/bin/activate
 
-## 4. Instalando as dependencias.
-Dentro do ambiente viertual agora podemos instalar as dependencias do projeto:
+## 4. Instalando as dependências.
+Dentro do ambiente virtual, agora podemos instalar as dependências do projeto:
 
 :~$ pip3 install -r requiremens.txt
 
-## 5. Inserindo o link(s) para processamento.
+## 5. Inserindo o(s) link(s) para processamento.
 
-Dentro do arquivo download_video.py temos uma lista "urls = []" aqui vc pode inserir os link(s) que desejar baixar.
+Dentro do arquivo download_video.py, temos uma lista "urls = []". Aqui você pode inserir o(s) link(s) que deseja baixar.
 
 urls = [
 
   "https://www.youtube.com/watch?v=W8w-wlQsEJs&list=RDW8w-wlQsEJs&start_radio=1",
-  ...demais links
+  ...outros links
 ]
 
-## 6. Rodando a aplicação.
-Agora basta rodar o arquivo no terminal:
+## 6. Executando a aplicação.
+Agora, basta executar o arquivo no terminal:
 
 python3 download_video.py
-
-
